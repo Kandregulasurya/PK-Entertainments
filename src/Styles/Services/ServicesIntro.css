@@ -1,0 +1,113 @@
+/* =========================================================
+   SERVICES INTRO
+========================================================= */
+
+.services-intro {
+  padding: 130px 0 80px;
+
+  background: var(--lis-bg);
+}
+
+.services-intro-container {
+  width: min(1200px, calc(100% - 80px));
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 80px 1fr;
+
+  gap: 30px;
+
+  align-items: start;
+}
+
+.services-intro-number {
+  color: var(--lis-purple);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+}
+
+.services-intro-content {
+  max-width: 900px;
+}
+
+.services-small-label {
+  display: inline-block;
+
+  color: var(--lis-purple-light);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.22em;
+}
+
+.services-intro-content h2 {
+  margin: 16px 0 0;
+
+  color: var(--lis-white);
+
+  font-size: clamp(38px, 5vw, 64px);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.045em;
+
+  font-weight: 500;
+}
+
+.services-intro-content h2 span {
+  color: var(--lis-purple-light);
+}
+
+.services-intro-content p {
+  max-width: 760px;
+
+  margin: 50px 0 0;
+
+  color: var(--lis-muted);
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .services-intro-container {
+    width: calc(100% - 50px);
+  }
+}
+
+@media (max-width: 700px) {
+  .services-intro {
+    padding: 90px 0 60px;
+  }
+
+  .services-intro-container {
+    width: calc(100% - 36px);
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .services-intro-content p {
+    margin-top: 30px;
+
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .services-intro-content h2 {
+    font-size: 38px;
+  }
+}

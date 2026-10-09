@@ -1,0 +1,75 @@
+/* =========================================================
+   LIVEINSMART SERVICES - GLOBAL THEME
+========================================================= */
+
+:root {
+  --lis-bg: #08060b;
+  --lis-bg-soft: #0d0913;
+  --lis-card: #100c17;
+
+  --lis-purple: #6a3fa0;
+  --lis-purple-light: #a285d4;
+  --lis-purple-hover: #8b5fc7;
+
+  --lis-white: #f1ebf8;
+  --lis-text: #cfc6d9;
+  --lis-muted: #a398b3;
+
+  --lis-border: rgba(162, 133, 212, 0.16);
+  --lis-border-hover: rgba(162, 133, 212, 0.42);
+}
+
+
+/* =========================================================
+   SERVICES PAGE
+========================================================= */
+
+.services-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: var(--lis-bg);
+  color: var(--lis-white);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   BOX SIZING
+========================================================= */
+
+.services-page *,
+.services-page *::before,
+.services-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.services-page a {
+  color: inherit;
+}
+
+
+/* =========================================================
+   MOBILE TAP
+========================================================= */
+
+.services-page button,
+.services-page a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   TEXT SELECTION
+========================================================= */
+
+.services-page ::selection {
+  background: var(--lis-purple);
+  color: #ffffff;
+}
